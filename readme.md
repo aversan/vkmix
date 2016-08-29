@@ -84,7 +84,7 @@ npm run deploy
 │   │   └── block/             # Блок
 │   │       ├── block.jade     # Разметка блока
 │   │       ├── block.js       # Скрипт блока
-│   │       └── block.styl     # Стили блока
+│   │       └── block.sass     # Стили блока
 │   ├── data/                  # Данные в формате JSON
 │   ├── pages/                 # Страницы
 │   │   └── index.jade         # Разметка страницы
@@ -95,13 +95,13 @@ npm run deploy
 │   │   └── app.js             # Главный скрипт
 │   └── styles/                # Стили
 │       ├── helpers/           # Помощники
-│       │   ├── fonts.styl     # Подключение шрифтов
-│       │   ├── mixins.styl    # Примеси
-│       │   ├── optimize.styl  # Сброс стилей и фиксы
-│       │   ├── svg-size.styl  # Переменные с размерами SVG иконок (автосборка)
-│       │   └── variables.styl # Переменные
+│       │   ├── fonts.sass     # Подключение шрифтов
+│       │   ├── mixins.sass    # Примеси
+│       │   ├── optimize.sass  # Сброс стилей и фиксы
+│       │   ├── svg-size.sass  # Переменные с размерами SVG иконок (автосборка)
+│       │   └── variables.sass # Переменные
 │       ├── sprites/           # Переменные с данными PNG спрайтов (автосборка)
-│       └── app.styl           # Главный стилевой файл
+│       └── app.sass           # Главный стилевой файл
 ├── dist/                      # Сборка (автогенерация)
 │   ├── assets/                # Подключаемые ресурсы
 │   │   ├── fonts/             # Шрифты
@@ -162,7 +162,7 @@ npm run deploy
 ├── app/
 │    └── styles/
 │       └── sprites/
-│           └── emoji.styl
+│           └── emoji.sass
 └── dist/
     └── assets/
         └── images/
