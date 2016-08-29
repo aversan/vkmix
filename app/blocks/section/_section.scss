@@ -2,7 +2,6 @@
 	padding-top: 175px;
 	padding-bottom: 175px;
 	position: relative;
-	overflow: hidden;
 
 	& > .container-fluid {
 		position: relative;
@@ -17,6 +16,11 @@
 		padding-top: 175px;
 	}
 
+	&-wrapper-vkmix {
+		background-color: #5b8cc4;
+		border: 1px solid red;
+	}
+
 	&--theme--vkmix {
 		background-position: 50% 0;
 		background-repeat: no-repeat;
@@ -26,6 +30,10 @@
 		&.section--color--inverse {
 			background-color: #eceff5;
 			color: #4e5665;
+		}
+
+		.section-wrapper-vkmix & {
+			background-color: transparent;
 		}
 	}
 
