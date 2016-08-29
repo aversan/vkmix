@@ -1,0 +1,190 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+@at-root {
+	@-moz-viewport      { width: device-width; }
+	@-ms-viewport       { width: device-width; }
+	@-o-viewport        { width: device-width; }
+	@-webkit-viewport   { width: device-width; }
+	@viewport           { width: device-width; }
+}
+
+html {
+	font-size: $font-size-root;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: 300;
+	line-height: $line-height-base;
+	background-color: $body-bg;
+	color: $body-color;
+	min-width: 1310px;
+}
+
+[tabindex="-1"]:focus {
+	outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .7rem;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.4rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+	cursor: help;
+	border-bottom: 1px dotted $abbr-border-color;
+}
+
+address {
+	margin-bottom: 1.4rem;
+	font-style: normal;
+	line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+	margin-top: 0;
+	margin-bottom: 1.4rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+
+dd {
+	margin-bottom: .7rem;
+	margin-left: 0;
+}
+
+blockquote {
+	margin: 0 0 1.4rem;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	@include hover-focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+
+	&:focus {
+		@include tab-focus();
+	}
+}
+
+pre {
+	margin-top: 0;
+	margin-bottom: 1.4rem;
+}
+
+figure {
+	margin: 0 0 1.4rem;
+}
+
+
+img {
+	vertical-align: middle;
+}
+
+[role="button"] {
+	cursor: pointer;
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+	touch-action: manipulation;
+}
+
+table {
+	background-color: $table-bg;
+}
+
+caption {
+	padding-top: $table-cell-padding;
+	padding-bottom: $table-cell-padding;
+	color: $text-muted;
+	text-align: left;
+	caption-side: bottom;
+}
+
+th {
+	text-align: left;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: .7rem;
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	line-height: inherit;
+	border-radius: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+fieldset {
+	min-width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: .7rem;
+	font-size: 1.5rem;
+	line-height: inherit;
+	border: 0;
+}
+
+input[type="search"] {
+	box-sizing: inherit;
+	-webkit-appearance: none;
+}
+
+[hidden] {
+	display: none !important;
+}

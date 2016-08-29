@@ -1,0 +1,420 @@
+.btn {
+	font-weight: $btn-font-weight;
+	line-height: $btn-line-height;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	border: $input-btn-border-width solid transparent;
+	transition: all .2s ease-in-out;
+	display: inline-block;
+	@include button-size($btn-padding-y, $btn-padding-x, $font-size-md, $line-height-md, $btn-border-radius);
+	text-transform: uppercase;
+	letter-spacing: .1ex;
+
+	&,
+	&:active,
+	&.active {
+		&:focus,
+		&.focus {
+			@include tab-focus();
+		}
+	}
+
+	@include hover-focus {
+		text-decoration: none;
+	}
+
+	&.focus {
+		text-decoration: none;
+	}
+
+	&:active,
+	&.active {
+		background-image: none;
+		outline: 0;
+		box-shadow: $btn-active-box-shadow;
+	}
+
+	&.disabled,
+	&:disabled {
+		cursor: $cursor-disabled;
+		opacity: .65;
+		box-shadow: none;
+	}
+}
+
+a.btn.disabled,
+fieldset[disabled] a.btn {
+	pointer-events: none;
+}
+
+
+.btn-primary {
+	@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+.btn-secondary {
+	@include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn-link {
+	font-weight: normal;
+	color: $link-color;
+	border-radius: 0;
+
+	&,
+	&:active,
+	&.active,
+	&:disabled {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&,
+	&:focus,
+	&:active {
+		border-color: transparent;
+	}
+
+	@include hover {
+		border-color: transparent;
+	}
+
+	@include hover-focus {
+		color: $link-hover-color;
+		text-decoration: none;
+		background-color: transparent;
+	}
+
+	&:disabled,
+	&.disabled {
+		color: $btn-link-disabled-color;
+
+		@include hover-focus {
+			color: $btn-link-disabled-color;
+			text-decoration: none;
+		}
+	}
+
+	&[aria-expanded="true"] {
+		color: #ccc;
+	}
+}
+
+.btn-sm {
+	@include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+}
+
+.btn-lg {
+	@include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $line-height-lg, $btn-border-radius-lg);
+}
+
+@include max-screen(544px) {
+	.btn-lg {
+		@include button-size(.475rem, .95rem, $font-size-md, $line-height-md, $btn-border-radius);
+	}
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.btn-block + .btn-block {
+	margin-top: 5px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn-block {
+		width: 100%;
+	}
+}
+
+.btn--social {
+	font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 400;
+	color: $btn-social-color;
+	background-color: transparent;
+	border-color: $btn-social-color;
+	text-transform: none;
+	width: 250px;
+	text-align: center;
+	position: relative;
+	@include button-size(19px, 40px, 18px, 40px, 100px);
+	padding-left: 70px;
+	padding-right: 70px;
+
+	.mdi {
+		line-height: 1;
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		&-google {
+			font-size: 30px;
+			height: 30px;
+		}
+
+		&-facebook {
+			font-size: 30px;
+			height: 30px;
+		}
+
+		&-twitter {
+			font-size: 34px;
+			height: 34px;
+		}
+
+		&-vk {
+			font-size: 46px;
+			height: 46px;
+		}
+	}
+
+	.btn__icon {
+		line-height: 1;
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		transform: translate(0, -50%);
+		text-align: center;
+		display: block;
+
+		& svg {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&--facebook svg {
+			width: 15px;
+			height: 26px;
+			position: relative;
+			left: 10px;
+		}
+
+		&--twitter svg {
+			width: 31px;
+			height: 26px;
+			position: relative;
+			left: 8px;
+		}
+
+		&--google-plus svg {
+			width: 26px;
+			height: 27px;
+			position: relative;
+			left: 11px;
+		}
+
+		&--vkontakte svg {
+			width: 38px;
+			height: 22px;
+			position: relative;
+			left: 2px;
+		}
+	}
+
+	.btn__counter {
+		font-size: 12px;
+		line-height: 1;
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		margin-top: -6px;
+	}
+
+	&:focus,
+	&:hover {
+		color: #fff;
+		background-color: $btn-social-color;
+		border-color: $btn-social-color;
+	}
+
+	&:active,
+	&.active {
+		color: #fff;
+		background-color: $btn-social-color;
+		border-color: $btn-social-color;
+
+		&:focus,
+		&:hover {
+			color: #fff;
+			background-color: $btn-social-color;
+			border-color: $btn-social-color;
+		}
+	}
+
+	&--facebook {
+		&:focus,
+		&:hover {
+			color: #fff;
+			background-color: #4769bb;
+			border-color: #4769bb;
+		}
+
+		&:active,
+		&.active {
+			color: #fff;
+			background-color: #4769bb;
+			border-color: #4769bb;
+
+			&:focus,
+			&:hover {
+				color: #fff;
+				background-color: #4769bb;
+				border-color: #4769bb;
+			}
+		}
+	}
+
+	&--twitter {
+		&:focus,
+		&:hover {
+			color: #fff;
+			background-color: #55acee;
+			border-color: #55acee;
+		}
+
+		&:active,
+		&.active {
+			color: #fff;
+			background-color: #55acee;
+			border-color: #55acee;
+
+			&:focus,
+			&:hover {
+				color: #fff;
+				background-color: #55acee;
+				border-color: #55acee;
+			}
+		}
+	}
+
+	&--google {
+		&:focus,
+		&:hover {
+			color: #fff;
+			background-color: #dd4b39;
+			border-color: #dd4b39;
+		}
+
+		&:active,
+		&.active {
+			color: #fff;
+			background-color: #dd4b39;
+			border-color: #dd4b39;
+
+			&:focus,
+			&:hover {
+				color: #fff;
+				background-color: #dd4b39;
+				border-color: #dd4b39;
+			}
+		}
+	}
+
+	&--vkontakte {
+		&:focus,
+		&:hover {
+			color: #fff;
+			background-color: #4e729a;
+			border-color: #4e729a;
+		}
+
+		&:active,
+		&.active {
+			color: #fff;
+			background-color: #4e729a;
+			border-color: #4e729a;
+
+			&:focus,
+			&:hover {
+				color: #fff;
+				background-color: #4e729a;
+				border-color: #4e729a;
+			}
+		}
+	}
+}
+
+
+.btn--icon {
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 100px;
+	backdrop-filter: blur(5px);
+	color: #7e8fa4;
+	background-color: #fff;
+	position: relative;
+
+	svg {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover,
+	&:focus {
+		color: #1d87e4;
+		background-color: #fff;
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+		transform: translateY(-5px);
+	}
+
+	&--prev {
+		svg {
+			width: 22px;
+			height: 19px;
+		}
+	}
+
+	&--like {
+		svg {
+			width: 22px;
+			height: 24px;
+		}
+	}
+
+	&--behance {
+		svg {
+			width: 22px;
+			height: 14px;
+		}
+
+		&,
+		&:focus,
+		&:hover,
+		&:active,
+		&:active:focus,
+		&:active:hover {
+			background-color: #1769ff;
+			color: #fff;
+		}
+	}
+
+	&--lg {
+		width: 76px;
+		height: 76px;
+
+		&.swiper-button-prev svg,
+		&.swiper-button-next svg {
+			width: 17px;
+			height: 30px;
+		}
+
+		&.swiper-button-prev svg {
+			margin-left: -4px;
+		}
+
+		&.swiper-button-next svg {
+			margin-right: -4px;
+		}
+	}
+}

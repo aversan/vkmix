@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="196px" height="54px" viewBox="0 0 196 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>F7081D71-3F97-4300-87D3-9DA574298648</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Presentation-1440" transform="translate(-622.000000, -5498.000000)">
+            <g id="5---illustration" transform="translate(270.000000, 3722.000000)">
+                <g id="price-icon" transform="translate(151.000000, 1383.000000)">
+                    <g id="moe" transform="translate(201.000000, 393.000000)">
+                        <rect id="Rectangle-path" fill="#E25A5A" x="6" y="0" width="24" height="12"></rect>
+                        <polygon id="Shape" fill="#F08989" points="29.652 0.014 36 10 24 32 14 27.124"></polygon>
+                        <polygon id="Shape" fill="#F08989" points="6.348 0.014 0 10 12 32 22 27.124"></polygon>
+                        <circle id="Oval" fill="#C27726" cx="18" cy="36" r="18"></circle>
+                        <text id="3" fill="#FFFFFF" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="20" font-weight="normal">
+                            <tspan x="12" y="44">3</tspan>
+                        </text>
+                        <rect id="Rectangle-path" fill="#E25A5A" x="86" y="0" width="24" height="12"></rect>
+                        <polygon id="Shape" fill="#F08989" points="109.652 0.016 116 10 104 32 94 27.124"></polygon>
+                        <polygon id="Shape" fill="#F08989" points="86.348 0.016 80 10 92 32 102 27.124"></polygon>
+                        <circle id="Oval" fill="#B5BECF" cx="98" cy="36" r="18"></circle>
+                        <text id="2" fill="#FFFFFF" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="20" font-weight="normal">
+                            <tspan x="92" y="44">2</tspan>
+                        </text>
+                        <rect id="Rectangle-path" fill="#E25A5A" x="166" y="0" width="24" height="12"></rect>
+                        <polygon id="Shape" fill="#F08989" points="189.652 0.016 196 10 184 32 174 27.124"></polygon>
+                        <polygon id="Shape" fill="#F08989" points="166.348 0.016 160 10 172 32 182 27.124"></polygon>
+                        <circle id="Oval" fill="#FEC962" cx="178" cy="36" r="18"></circle>
+                        <text id="1" fill="#FFFFFF" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="20" font-weight="normal">
+                            <tspan x="172" y="44">1</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

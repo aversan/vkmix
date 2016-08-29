@@ -1,0 +1,12 @@
+.icon {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

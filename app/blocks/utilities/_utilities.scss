@@ -1,0 +1,171 @@
+//
+// Floats
+//
+
+.clearfix {
+  @include clearfix();
+}
+
+.center-block {
+  @include center-block();
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .pull-#{$breakpoint}-left {
+      @include pull-left();
+    }
+    .pull-#{$breakpoint}-right {
+      @include pull-right();
+    }
+    .pull-#{$breakpoint}-none {
+      float: none !important;
+    }
+  }
+}
+
+
+//
+// Screenreaders
+//
+
+.sr-only {
+  @include sr-only();
+}
+
+.sr-only-focusable {
+  @include sr-only-focusable();
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.text-hide {
+  @include text-hide();
+}
+
+
+//
+// Text
+//
+
+// Alignment
+
+.text-justify        { text-align: justify !important; }
+.text-nowrap         { white-space: nowrap !important; }
+.text-truncate       { @include text-truncate; }
+
+// Responsive alignment
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .text-#{$breakpoint}-left   { text-align: left !important; }
+    .text-#{$breakpoint}-right  { text-align: right !important; }
+    .text-#{$breakpoint}-center { text-align: center !important; }
+  }
+}
+
+// Transformation
+
+.text-lowercase      { text-transform: lowercase !important; }
+.text-uppercase      { text-transform: uppercase !important; }
+.text-capitalize     { text-transform: capitalize !important; }
+
+// Weight and italics
+
+.font-weight-normal  { font-weight: normal; }
+.font-weight-bold    { font-weight: bold; }
+.font-italic         { font-style: italic; }
+
+// Contextual colors
+
+.text-muted {
+  color: $text-muted !important;
+}
+
+.img-fluid {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.hide,
+.hidden {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.invisible {
+	visibility: hidden !important;
+}
+
+.underline {
+	text-decoration: none !important;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.nounderline {
+	text-decoration: none !important;
+}
+
+ul.dash {
+	list-style: none;
+
+	& > li {
+		margin-left: 1.3em;
+
+		&:before {
+			content: '\2014\a0';
+			float: left;
+			margin-left: -1.25em;
+		}
+	}
+}
+
+.pseudolink {
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.position-cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.helper-first {
+	margin-top: 0 !important;
+}
+
+.helper-last {
+	margin-bottom: 0 !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.pos-rel-1 {
+	position: relative;
+	z-index: 1;
+}
+
+.clickable {
+	cursor: pointer;
+}

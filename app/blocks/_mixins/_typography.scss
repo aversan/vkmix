@@ -1,0 +1,202 @@
+/* Typography */
+
+@mixin typo-preferred-font($usePreferred: true) {
+	@if $usePreferred {
+		font-family: $preferred-font;
+	}
+}
+
+@mixin typo-heading-preferred-font($usePreferred: true) {
+	@if $usePreferred {
+		font-family: $heading-preferred-font;
+	}
+}
+
+@mixin typo-display-4($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 1.17;
+	letter-spacing: -0.035em;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-display-3($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 52px;
+	font-weight: 600;
+	line-height: 1.15;
+	letter-spacing: -0.035em;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-display-2($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 48px;
+	font-weight: 300;
+	line-height: 1.46;
+	letter-spacing: -0.0333em;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-display-1($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: -0.0333em;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-headline($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: .1ex;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-title($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: -0.025em;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-suphead($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: normal;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-subhead($colorContrast: false, $usePreferred: true) {
+	@include typo-preferred-font($usePreferred);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.56;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-subhead-2($colorContrast: false, $usePreferred: true) {
+	@include typo-preferred-font($usePreferred);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.7822;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-body-2($colorContrast: false, $usePreferred: false) {
+	@include typo-preferred-font($usePreferred);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.6;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-body-1($colorContrast: false, $usePreferred: false) {
+	@include typo-preferred-font($usePreferred);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.78;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-caption($colorContrast: false, $usePreferred: false) {
+	@include typo-preferred-font($usePreferred);
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: 0;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-blockquote($colorContrast: false, $usePreferred: true) {
+	@include typo-preferred-font($usePreferred);
+	position: relative;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 1.35;
+	letter-spacing: 0.08em;
+
+	&:before {
+		position: absolute;
+		left: -0.5em;
+		content: 'вЂњ';
+	}
+
+	&:after {
+		content: 'вЂќ';
+		margin-left: -0.05em;
+	}
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-button($colorContrast: false, $usePreferred: true) {
+	@include typo-heading-preferred-font($usePreferred);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+
+	@if $colorContrast {
+		opacity: 0.54;
+	}
+}
+
+@mixin typo-icon() {
+	display: inline-block;
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}

@@ -1,0 +1,546 @@
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Vkmix';
+	- var pageDescription = '';
+	- var pageKeywords = '';
+
+block page
+	- var pageClasses = ['page--theme--vkmix']
+
+block content
+		main.section.section--main.section--theme--vkmix
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						| <div class="section__logo-wrapper">
+						| <svg class="section__logo-svg" xmlns="http://www.w3.org/2000/svg">
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M895,1020a125,125 0 1,0 250,0a125,125 0 1,0 -250,0"/>
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M825,1020a195,195 0 1,0 390,0a195,195 0 1,0 -390,0"/>
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M710,1020a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/>
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M560,1020a460,460 0 1,0 920,0a460,460 0 1,0 -920,0"/>
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M310,1020a710,710 0 1,0 1420,0a710,710 0 1,0 -1420,0"/>
+						| <path class="section__logo-circle" stroke-width="1" fill="none" d="M0,1020a1020,1020 0 1,0 2040,0a1020,1020 0 1,0 -2040,0"/>
+						| </svg>
+						| <img class="section__logo" src='assets/images/vk/logo-vkmix.svg', alt='', width='81', height='82'>
+						| </div>
+						h1.typography--display-4
+							span.typography--suphead Flatstudio - Lisbon 2016
+							| Exchange<br>of Social Activity
+						h4.typography--display-1.typography--force-base-font A social network for activity exchange got a new look by our team at Flatstudio.
+			footer
+				.section__action-left
+					a.btn.btn--icon.btn--icon--prev(href="")
+						+icon('back')
+				.section__action-right
+					a.btn.btn--icon.btn--icon--like(href="")
+						+icon('like')
+					a.btn.btn--icon.btn--icon--behance(href="")
+						+icon('behance')
+		section.section.section--info.section--theme--vkmix
+			.container-fluid.page__container
+				.section__panel
+					h3.typography--display-2
+						span.typography--suphead <span class="typography--font-regular">Vkmix</span> <span class="typography--font-light">June 2016</span>
+						| Social simplicity.
+					.swiper-container-wrapper.swiper-container-wrapper--section
+						.swiper-container.swiper-container--section
+							.swiper-wrapper
+								.swiper-slide
+									img(src='http://placehold.it/990x595', alt='', width='990', height='595')
+								.swiper-slide
+									img(src='http://placehold.it/990x595', alt='', width='990', height='595')
+								.swiper-slide
+									img(src='http://placehold.it/990x595', alt='', width='990', height='595')
+								.swiper-slide
+									img(src='http://placehold.it/990x595', alt='', width='990', height='595')
+						.swiper-button-prev.btn.btn--icon.btn--icon--lg
+							+icon('chevron-left')
+						.swiper-button-next.btn.btn--icon.btn--icon--lg
+							+icon('chevron-right')
+					.row.section__row
+						.col-xs-8.section__col.section__col--section
+							h5.typography--title-color-contrast About
+							p.typography--body-2
+								| VKmix is a service for a quick and free exchange of social activity in the social network like Vkontakte, Instagram, YouTube and Twitter. The whole service is based on the system of a real exchange between users.
+						.col-xs-4.section__col.section__col--side
+							.section__col-inner
+								h5.typography--title-color-contrast Deliverables
+								p.typography--body-2
+									| Web UI/UX Design
+									br
+									| Web Responsive
+									br
+									| Creative Direction
+									br
+									| Color Approach
+					.hr.section__panel-hr
+						hr
+					h5.typography--title-color-contrast Authors
+					.row.section__row
+						.col-xs-6.section__col
+							.list.section__list
+								.list__item.list__item--two-line
+									span.list__item-primary-content
+										a.list__item-avatar(href="https://www.facebook.com/bohdan.kononets", target="_blank", style="background-image:url(assets/images/av_bohdan.png)")
+										span Bohdan Kononets
+										span.list__item-sub-title
+											a(href='https://www.facebook.com/bohdan.kononet', target="_blank") Facebook
+											a(href='http://telegram.me/bohdankononets', target="_blank") Telegram
+											a(href='https://www.linkedin.com/in/bohdan-kononets-6a161b84?trk', target="_blank") Linkedin
+											a(href='https://www.behance.net/bohdan_kononets', target="_blank") Behance
+							p.typography--body-1
+								| Senior Interface & Graphic Designer and Founder of Flatstudio. A perfectionist with a lot of passion for details in web and mobile development, colors and pixel perfection. Bohdan gets inspiration from the scientific books and films.
+						.col-xs-6.section__col
+							.list.section__list
+								.list__item.list__item--two-line
+									span.list__item-primary-content
+										a.list__item-avatar(href="https://www.facebook.com/slava.kornilov.7?fref=ts", target="_blank", style="background-image:url(assets/images/av_slava.png)")
+										span Slava Kornilov
+										span.list__item-sub-title
+											a(href='https://www.facebook.com/slava.kornilov.7?fref=ts', target="_blank") Facebook
+											a(href='http://telegram.me/slavako', target="_blank") Telegram
+											a(href='https://www.behance.net/slavakornilov', target="_blank") Behance
+							p.typography--body-1
+								| Product designer and typography guru at Flatstudio. His interests and working skills are focusing on web and mobile interface design. Slava thoroughly studies and implements both Motion Design and Material Design.
+		section.section.section--typography.section--00.section--theme--vkmix
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Typography
+							br
+							span.typography--font-thin that inspires you
+						p.typography--subhead
+							| We have chosen a simple and popular font - Roboto. It looks perfectly with сyrillic and latin letters.
+				section.section__group
+					h4.typography--display-1
+						span.typography--font-light Roboto
+						span.typography--font-regular regular
+					.section__group-typo
+						p.section__group-line.typography--font-roboto.typography--font-regular
+							| <span class="letter">A</span>
+							| <span class="letter">B</span>
+							| <span class="letter">C</span>
+							| <span class="letter">D</span>
+							| <span class="letter">E</span>
+							| <span class="letter">F</span>
+							| <span class="letter">G</span>
+							| <span class="letter">H</span>
+							| <span class="letter">I</span>
+							| <span class="letter">J</span>
+							| <span class="letter">K</span>
+							| <span class="letter">L</span>
+							| <span class="letter">M</span>
+							| <span class="letter">N</span>
+							| <span class="letter">O</span>
+							| <span class="letter">P</span>
+							| <span class="letter">Q</span>
+							| <span class="letter">R</span>
+							| <span class="letter">S</span>
+							| <span class="letter">T</span>
+							| <span class="letter">U</span>
+							| <span class="letter">V</span>
+							| <span class="letter">W</span>
+							| <span class="letter">X</span>
+							| <span class="letter">Y</span>
+							| <span class="letter">Z</span>
+						p.section__group-line.typography--font-roboto.typography--font-regular
+							| <span class="letter">a</span>
+							| <span class="letter">b</span>
+							| <span class="letter">c</span>
+							| <span class="letter">d</span>
+							| <span class="letter">e</span>
+							| <span class="letter">f</span>
+							| <span class="letter">g</span>
+							| <span class="letter">h</span>
+							| <span class="letter">i</span>
+							| <span class="letter">j</span>
+							| <span class="letter">k</span>
+							| <span class="letter">l</span>
+							| <span class="letter">m</span>
+							| <span class="letter">n</span>
+							| <span class="letter">o</span>
+							| <span class="letter">p</span>
+							| <span class="letter">q</span>
+							| <span class="letter">r</span>
+							| <span class="letter">s</span>
+							| <span class="letter">t</span>
+							| <span class="letter">u</span>
+							| <span class="letter">v</span>
+							| <span class="letter">w</span>
+							| <span class="letter">x</span>
+							| <span class="letter">y</span>
+							| <span class="letter">z</span>
+						p.section__group-line.typography--font-roboto.typography--font-regular
+							| <span class="letter">0</span>
+							| <span class="letter">1</span>
+							| <span class="letter">2</span>
+							| <span class="letter">3</span>
+							| <span class="letter">4</span>
+							| <span class="letter">5</span>
+							| <span class="letter">6</span>
+							| <span class="letter">7</span>
+							| <span class="letter">8</span>
+							| <span class="letter">9</span>
+							| <span class="letter">!</span>
+							| <span class="letter">?</span>
+							| <span class="letter">€</span>
+							| <span class="letter">&</span>
+							| <span class="letter">%</span>
+							| <span class="letter">$</span>
+							| <span class="letter">#</span>
+							| <span class="letter">()</span>
+							| <span class="letter">”</span>
+							| <span class="letter">*</span>
+							| <span class="letter">/</span>
+				section.section__group
+					h4.typography--display-1
+						span.typography--font-light Roboto
+						span.typography--font-medium medium
+					.section__group-typo
+							p.section__group-line.typography--font-roboto.typography--font-medium
+								| <span class="letter">A</span>
+								| <span class="letter">B</span>
+								| <span class="letter">C</span>
+								| <span class="letter">D</span>
+								| <span class="letter">E</span>
+								| <span class="letter">F</span>
+								| <span class="letter">G</span>
+								| <span class="letter">H</span>
+								| <span class="letter">I</span>
+								| <span class="letter">J</span>
+								| <span class="letter">K</span>
+								| <span class="letter">L</span>
+								| <span class="letter">M</span>
+								| <span class="letter">N</span>
+								| <span class="letter">O</span>
+								| <span class="letter">P</span>
+								| <span class="letter">Q</span>
+								| <span class="letter">R</span>
+								| <span class="letter">S</span>
+								| <span class="letter">T</span>
+								| <span class="letter">U</span>
+								| <span class="letter">V</span>
+								| <span class="letter">W</span>
+								| <span class="letter">X</span>
+								| <span class="letter">Y</span>
+								| <span class="letter">Z</span>
+							p.section__group-line.typography--font-roboto.typography--font-medium
+								| <span class="letter">a</span>
+								| <span class="letter">b</span>
+								| <span class="letter">c</span>
+								| <span class="letter">d</span>
+								| <span class="letter">e</span>
+								| <span class="letter">f</span>
+								| <span class="letter">g</span>
+								| <span class="letter">h</span>
+								| <span class="letter">i</span>
+								| <span class="letter">j</span>
+								| <span class="letter">k</span>
+								| <span class="letter">l</span>
+								| <span class="letter">m</span>
+								| <span class="letter">n</span>
+								| <span class="letter">o</span>
+								| <span class="letter">p</span>
+								| <span class="letter">q</span>
+								| <span class="letter">r</span>
+								| <span class="letter">s</span>
+								| <span class="letter">t</span>
+								| <span class="letter">u</span>
+								| <span class="letter">v</span>
+								| <span class="letter">w</span>
+								| <span class="letter">x</span>
+								| <span class="letter">y</span>
+								| <span class="letter">z</span>
+							p.section__group-line.typography--font-roboto.typography--font-medium
+								| <span class="letter">0</span>
+								| <span class="letter">1</span>
+								| <span class="letter">2</span>
+								| <span class="letter">3</span>
+								| <span class="letter">4</span>
+								| <span class="letter">5</span>
+								| <span class="letter">6</span>
+								| <span class="letter">7</span>
+								| <span class="letter">8</span>
+								| <span class="letter">9</span>
+								| <span class="letter">!</span>
+								| <span class="letter">?</span>
+								| <span class="letter">€</span>
+								| <span class="letter">&</span>
+								| <span class="letter">%</span>
+								| <span class="letter">$</span>
+								| <span class="letter">#</span>
+								| <span class="letter">()</span>
+								| <span class="letter">”</span>
+								| <span class="letter">*</span>
+								| <span class="letter">/</span>
+				section.section__group
+					.section__group-icons
+						img(src="assets/images/vk/icons/icon-1.svg", alt="")
+						img(src="assets/images/vk/icons/icon-2.svg", alt="")
+						img(src="assets/images/vk/icons/icon-3.svg", alt="")
+						img(src="assets/images/vk/icons/icon-4.svg", alt="")
+						img(src="assets/images/vk/icons/icon-5.svg", alt="")
+						img(src="assets/images/vk/icons/icon-6.svg", alt="")
+		section.section.section--illustration.section--01.section--theme--vkmix
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Illusrtations
+							br
+							span.typography--font-thin a path to individuality
+						p.typography--subhead
+							| They provide an emotional atmosphere, a character and visual representation of the whole service and turn an average website into something really unique.
+				.section__group
+					figure.section__group-line.section__group-line--01
+						img.img-fuild(src='assets/images/vk/illustrations/group.svg', alt='', width='899', height='609')
+					figure.section__group-line.section__group-line--02
+						img(src='assets/images/vk/illustrations/1-vote.svg', alt='', width='150', height='150')
+						img(src='assets/images/vk/illustrations/2-subscribers.svg', alt='', width='151', height='150')
+						img(src='assets/images/vk/illustrations/3-share.svg', alt='', width='153', height='151')
+						img(src='assets/images/vk/illustrations/4-like.svg', alt='', width='150', height='150')
+					figure.section__group-line.section__group-line--03
+						img(src='assets/images/vk/illustrations/share.svg', alt='', width='120', height='130')
+						img(src='assets/images/vk/illustrations/plane.svg', alt='', width='136', height='128', style="margin-top:10px;")
+						img(src='assets/images/vk/illustrations/vavem.svg', alt='', width='120', height='140')
+					figure.section__group-line.section__group-line--04
+						img(src='assets/images/vk/illustrations/budda_1.svg', alt='', width='70', height='71')
+						img(src='assets/images/vk/illustrations/budda_2.svg', alt='', width='70', height='71')
+						img(src='assets/images/vk/illustrations/budda_3.svg', alt='', width='70', height='71')
+						img(src='assets/images/vk/illustrations/budda_4.svg', alt='', width='70', height='71')
+						img(src='assets/images/vk/illustrations/vip.svg', alt='', width='75', height='69')
+						img(src='assets/images/vk/illustrations/rei.svg', alt='', width='75', height='74', style="margin-top:-3px;")
+					figure.section__group-line.section__group-line--05
+						img(src='assets/images/vk/illustrations/moe.svg', alt='', width='196', height='54')
+		section.section.section--screenshot.section--02.section--theme--vkmix.section--screenshot--task
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Tasks Page
+							br
+							span.typography--font-thin simple activity exchange
+						p.typography--subhead
+							| The Tasks page is like your VKmix homepage. It shows the tasks that you need to action, their state, provides the groups to follow and shortcuts to work with all the lists.
+				.img-comparision-wrapper
+					.img-comparision-description
+						.previous Old version
+						.next New version
+					.img-comparision.js-comparision
+						figure.img-comparision__container
+							.img-comparision__inner
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+							.img-comparision__resize-image
+								img(src='http://placehold.it/1280x935/cccccc/ffffff', alt='', width='1280', height='935')
+							span.img-comparision__handle
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.section__bg-wrapper
+					.section__image-row
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Tasks
+								p.section__image-sub-title Search the tasks even on your phone and accomplish them.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Navigation
+								p.section__image-sub-title Easily control your account datails and all your activity.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Users
+								p.section__image-sub-title See the best users and try to reach the Top of Vkmix people.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+					.section__bg-top(data-uk-parallax="{bg:'-100'}")
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.section__bg-wrapper
+					.section__image-row
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Support
+								p.section__image-sub-title If you have problems or questions you can always contact the support center.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Online Bot
+								p.section__image-sub-title Use our Online Bot to do your tasks automatically.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Auction
+								p.section__image-sub-title Earn even more points at the auctions and compete with other people.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+					.section__bg-top(data-uk-parallax="{bg:'-100'}")
+		section.section.section--screenshot.section--03.section--theme--vkmix.section--screenshot--blog
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Blog Page
+							br
+							span.typography--font-thin simple and clear
+						p.typography--subhead
+							| There is a company blog to read and get news. It is designed to be simple and clear to enjoy every article.
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x1074/cccccc/333333', alt='', width='1280', height='1074')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x1074/cccccc/333333', alt='', width='1280', height='1074')
+				.section__bg-wrapper
+					.section__image-row
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Read
+								p.section__image-sub-title Read the blog posts while using your mobile device.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Create
+								p.section__image-sub-title Easily write a new blog post with all necessary details on the go.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Edit notice
+								p.section__image-sub-title Edit your blog post with beautiful mobile layout.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+					.section__bg-top(data-uk-parallax="{bg:'-100'}")
+		section.section.section--screenshot.section--04.section--theme--vkmix.section--screenshot--statistic
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Statistics Page
+							br
+							span.typography--font-thin informative and clear
+						p.typography--subhead
+							| Get all the statistics of your activity and tasks performance on one page with detailed information of each item.
+				.img-comparision-wrapper.pos-rel-1
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x935/cccccc/333333', alt='', width='1280', height='935')
+			.section__bg-wrapper
+				.container-fluid.page__container
+					.section__image-row
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title No Data
+								p.section__image-sub-title The mobile layout is easy to navigate through even with no data.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title With Data
+								p.section__image-sub-title Get all the statistics and task management on your phone.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title In Detail
+								p.section__image-sub-title See the detailed tasks of each social network.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+				.section__bg-top(data-uk-parallax="{bg:'-100'}")
+				.section__bg-wave
+		section.section.section--screenshot.section--05.section--theme--vkmix.section--screenshot--create-page
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Create Page
+							br
+							span.typography--font-thin simple and clear
+						p.typography--subhead
+							| Create new tasks for every social network with points you can earn performing the tasks created by other users.
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x785/cccccc/333333', alt='', width='1280', height='785')
+				.img-comparision-wrapper
+					.img-comparision-description
+						.next New version
+					.img-comparision
+						figure.img-comparision__container
+							img(src='http://placehold.it/1280x785/cccccc/333333', alt='', width='1280', height='785')
+				.section__bg-wrapper
+					.section__image-row.section__image-row--column-2
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Info Page
+								p.section__image-sub-title Info page with the choice of a social network to create task.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+						figure.section__image
+							figcaption.section__image-caption
+								h6.section__image-title Task Create
+								p.section__image-sub-title Сreating tasks for the users with possibility of earning points.
+							img.section__image-image(src='http://placehold.it/375x900', alt='', width='375', height='900')
+					.section__bg-top(data-uk-parallax="{bg:'-100'}")
+		section.section.section--interface.section--06
+			.section__bg-top(data-uk-parallax="{bg:'-100'}")
+			.container-fluid.page__container
+				header.section__header
+					.section__container
+						h2.typography--display-3
+							| Interface
+							br
+							span.typography--font-thin modern and attractive
+						p.typography--subhead
+							| With the modern and attractive interface, you will never want to leave any page. It attracts you to perform the tasks, to use the services, to see the statistics and enjoy reading the blog.
+			.cover-background.pos-rel(style="background-image:url(assets/images/vk/interface.png);")
+				img.invisible(src='interface.png', alt='', width='1438', height='2179')
+		include ../blocks/section/section--thanks.jade
+		include ../blocks/page-footer/page-footer.jade
